@@ -17,32 +17,33 @@
     transform: rotate3d(0, 0, 1, 0deg);
   }
 }
-
 .swing {
   transform-origin: top center;
   animation-name: swing;
 }
-
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
-
 .animated.infinite {
   animation-iteration-count: infinite;
 }
-
 .zoom {
   img {
-  transition: 1s
-  }
   transition: 2s
-}
+  }
+  transition: 1s;
+  box-shadow:  1px 1px 1px darken($color: #d1d4d4, $amount: 5);;
 
+}
 .zoom:hover {
   img {
-    transform: scale(1.05);
+  transform: scale(1.02);
   }
+  transform: scale(1.05);
+  box-shadow:  7px 7px 7px darken($color: #d4d4d4, $amount: 5);;
+  z-index: 1000;
+
 }
 
 

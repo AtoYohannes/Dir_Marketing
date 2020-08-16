@@ -1,17 +1,25 @@
 import React from "react";
-import EllipseLeft from "../Assets/icons/Ellipse-Left.svg";
-import EllipseRight from "../Assets/icons/Ellipse-Right.svg";
+import Divider1 from "../assets/Divider.png";
+import { Row, Col } from "reactstrap";
 
 const Divider = ({ title }) => {
   return (
-    <div className="divider bg-background mt-5 mb-5">
-      <img src={EllipseLeft} alt="" />
-      <div className="ml-1 mr-1">
-        <h3>
-          <b>{title}</b>
-        </h3>
-      </div>
-      <img src={EllipseRight} alt="" />
+    <div className="divider bg-background mb-5">
+      <Row>
+        <Col>
+          <img src={Divider1} alt="" />
+        </Col>
+        <Col md={12}>
+          <div>
+            <h3>
+              <b>{title}</b>
+            </h3>
+          </div>
+        </Col>
+        <Col>
+          <img src={Divider1} alt="" />
+        </Col>
+      </Row>
     </div>
   );
 };

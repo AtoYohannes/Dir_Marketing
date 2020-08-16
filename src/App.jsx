@@ -3,7 +3,7 @@ import "./styles/dirmarketing.scss";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import routes from "./config/routes";
 import { Spinner } from "reactstrap";
-import { MainLayout, LayoutRoute, EmptyLayout } from "./components/Layout";
+import { MainLayout } from "./components/Layout";
 
 const HomePage = React.lazy(() => import("./pages/landingPage"));
 

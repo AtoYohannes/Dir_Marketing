@@ -10,3 +10,9 @@
 .rounded-circle {
   object-fit: cover;
 }
+
+.divider {
+  justify-content: center;
+  // flex-direction: row;
+  display: flex;
+}
