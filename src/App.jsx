@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter basename={getBasename()}>
       <Switch>
-        <React.Suspense
+        {/* <React.Suspense
           fallback={
             <div className="spinnerContainer">
               <Spinner color="secondary" />
@@ -28,7 +28,7 @@ function App() {
             layout={EmptyLayout}
             component={HomePage}
           />
-        </React.Suspense>
+        </React.Suspense> */}
 
         <React.Fragment>
           <MainLayout>

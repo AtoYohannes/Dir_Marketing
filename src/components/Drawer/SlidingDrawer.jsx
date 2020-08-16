@@ -1,6 +1,6 @@
 import React from "react";
-// import SignInPage from "../../Pages/SignIn";
-// import SignUpPage from "../../Pages/SignUp";
+import SignInPage from "../../pages/SignIn";
+import SignUpPage from "../../pages/SignUp";
 
 const SlidingDrawer = ({ type, show }) => {
   let drawerClasses = "side-drawer";
@@ -10,10 +10,7 @@ const SlidingDrawer = ({ type, show }) => {
 
   return (
     <div className={drawerClasses}>
-      {/* {type === "signIn" ? <SignInPage /> : <SignUpPage />} */}
-      <h1>
-        Sliding Drawer
-      </h1>
+      {type === "signIn" ? <SignInPage /> : <SignUpPage />}
     </div>
   );
 };

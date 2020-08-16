@@ -76,7 +76,7 @@ class Header extends React.Component {
 
           {isMobile && (
             <Nav navbar className="ml-2">
-              Menen
+              Dir Marketing
             </Nav>
           )}
           {isMobile ? (
