@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Jobs } from "./components";
+import { Jobs, DirLanding } from "./components";
 import Divider from "../../components/Divider";
 
 class LandingPage extends Component {
@@ -11,6 +11,7 @@ class LandingPage extends Component {
   render() {
     return (
       <div>
+        <DirLanding />
         <Divider title="Job Offerings (የስራ እድሎች)" />
         <Jobs />
         <Divider title="ሶመትሂንግ (የስራ እድሎች)" />

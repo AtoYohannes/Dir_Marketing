@@ -59,14 +59,10 @@ class Header extends React.Component {
 
   render() {
     const isMobile = this.state.isMobile;
-    let drawerClasses = "";
-    if (this.props.scrolled) {
-      drawerClasses = "bg-gradient-theme-all scrolledAppBar";
-    }
 
     return (
       <>
-        <Navbar light fixed="top" expand className={drawerClasses}>
+        <Navbar light fixed="top" expand className='bg-light'>
           <Link
             to={{ pathname: routes.homePage }}
             style={{ textDecoration: "none" }}
