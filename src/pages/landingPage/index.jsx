@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Jobs, DirLanding } from "./components";
 import Divider from "../../components/Divider";
+import { connect } from "react-redux";
 
 class LandingPage extends Component {
   constructor(props) {
@@ -9,16 +10,21 @@ class LandingPage extends Component {
   }
 
   render() {
+    const { jobs } = this.props;
     return (
       <div>
         <DirLanding />
         <Divider title="Job Offerings (የስራ እድሎች)" />
-        <Jobs />
+        <Jobs jobs={jobs} />
         <Divider title="ሶመትሂንግ (የስራ እድሎች)" />
-
       </div>
     );
   }
 }
+const mapStateToProps = (state) => {
+  return {
+    jobs: state.job.jobs,
+  };
+};
 
-export default LandingPage;
+export default connect(mapStateToProps)(LandingPage);

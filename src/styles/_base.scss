@@ -37,19 +37,23 @@ button,
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    input {
+    margin-top: 10px;
+    border: none;
+    }
+    button {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: .5s;
+    }
+    button:hover {
+        transform: scale(1.09);
+    }
+    
 }
 
-.cr-app button {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    transition: .5s;
-}
-
-.cr-app button:hover {
-    transform: scale(1.09);
-}
 
 .cr-app-body {
     margin-top: 55px;
